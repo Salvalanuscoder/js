@@ -1,5 +1,5 @@
 let temas = ["drama", "accion", "terror", "comedia"];
-genero = prompt("que genero de pelicula deseas ver");
+let genero = prompt("que genero de pelicula deseas ver");
 while (!temas.includes(genero)) {
 	alert("Vuelva a intentarlo");
 	genero = prompt("que genero de pelicula deseas ver");

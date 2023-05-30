@@ -29,6 +29,10 @@ if (GeneroEncontrado.length > 0) {
 	}
 }
 
+
+//LocalStorage
+localStorage.setItem(`generoGuardado`, genero);
+
 //method find
 
 const peliculas = [
@@ -137,7 +141,7 @@ let pelicula = [
 
 
 //CICLO
-
+//OR y AND 
 let edad = parseInt(prompt("Ingrese su edad"));
 console.log(edad);
 while (!edad || edad < 0 || edad > 130) {
@@ -167,14 +171,25 @@ function checkAge(Edad) {
 	}
 }
 
+
+const respuesta = parseInt(prompt("Ingrese su edad"));
+
+//operador tenerario OR
+const repuesta =
+edad < 0 ? "error la edad no puede ser negativa":
+edad < 12 ? "Lo siento, usted no es lo suficientemente mayor para ver esta pelicula.":
+edad < 18 ? "Puede ver esta pelicula, pero necesita un acompañante.":
+"Eres mayor de edad, puedes ver la pelicula.";
+
+
 //CheckAge
-checkAge(edad);
-if (true === "edad < 12") {
-	respuesta = "Lo siento, usted no es lo suficientemente mayor para ver esta pelicula.";
-} else if (true === "edad < 18") {
-	respuesta = "Puede ver esta pelicula, pero necesita un acompañante.";
-} else if (true === "edad > 18") {
-	respuesta = "Eres mayor de edad, puedes ver la pelicula.";
-} else {
-	respuesta = "Ingrese su edad";
-}
+// checkAge(edad);
+// if (true === "edad < 12") {
+// 	respuesta = "Lo siento, usted no es lo suficientemente mayor para ver esta pelicula.";
+// } else if (true === "edad < 18") {
+// 	respuesta = "Puede ver esta pelicula, pero necesita un acompañante.";
+// } else if (true === "edad > 18") {
+// 	respuesta = "Eres mayor de edad, puedes ver la pelicula.";
+// } else {
+// 	respuesta = "Ingrese su edad";
+// }

@@ -1,10 +1,157 @@
-header {
-    text-align: center;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-.movie-input {
-    margin-bottom: 20px;
-    width: 100px;
-    height: 15px;
-    border-radius: 8px;
-    padding: 10px;
+/**/
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #e0e0e0;
+	color: #1d1d1d;
+}
+/**/
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 40px auto 100px auto;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+}
+/**/
+.contenedor .pelicula {
+	text-align: center;
+}
+/**/
+.contenedor .pelicula .titulo {
+	font-size: 16px;
+	font-weight: 600;
+}
+/*img de pelicula*/
+.contenedor .pelicula .poster {
+	width: 100%;
+	margin-bottom: 10px;
+}
+/*footer*/
+.paginacion {
+	position: fixed;
+	bottom: 0;
+	background: #100a1f;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
+}
+/*estilo boton de siguiente y anterior*/
+.paginacion button {
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: #241744;
+	color: #fff;
+	border-radius: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+}
+/*estilo de hover boton de siguiewnte y anterior*/
+.paginacion button:hover {
+	background: #137c32;
+}
+
+/*border*/
+.pelicula{
+	background-color: aqua;
+
+	overflow: hidden;
+		border-width: 1px;
+		border-style: solid;
+		/* border-color: blue; */
+		border-top-right-radius: 15px;
+		border-top-left-radius: 15px; 
+		
+
+		background-color: white;
+  border: solid 1px transparent; 
+  
+}
+
+/*background columns*/
+/* 
+
+/* .container {
+	display: flex;
+}
+
+.sidebar1 {
+	flex: 1;
+	background-color: lightgray;
+}
+
+.sidebar2 {
+	flex: 1;
+	background-color: green;
+}
+.content {
+	flex: 2;
+	background-color: red;
+	box-sizing: border-box;
+	padding: 10px;
+	margin-left: -20px;
+	margin-right: -20px;
+	height: 100;
+}
+
+.contenedor {
+	background-color: lightblue;
+}
+
+/*background header*/
+/* .header {
+	margin: 0px;
+	padding: 0%;
+	background-color: red;
+	height: 20px;
+
+} */ 
+header{
+	margin: 0px;
+	padding: 20px;
+	background-color: #100a1f;
+	height: 60px;
+
+	display: flex;
+	/* justify-content: flex-start;*/
+	align-items: center;
+	align-content: center; 
+	justify-content: space-between;
+	
+}
+
+h2{
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	justify-self: center;
+	
+}
+
+.cart{ 
+	border-radius: 99%;
+	cursor: pointer;
+	padding: 10px;
+	display: flex;
+	justify-self: center;
+	align-items: center;
+	transition: all 0.3s ease-in-out;
+	background: #241744;
+}
+.cart:hover{ 
+	background: #137c32;
 }

@@ -1,27 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
 <head>
-  <title>Document</title>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/custom-style.css" />
+	<title>Sitio de peliculas</title>
+	
 </head>
+
 <body>
-  <h1>Películas</h1>
+	
+	<header>
+		<h2>Sitio de peliculas</h2>
+		<div class="cart"><img src="recursos/carrito.png" alt="carrito.png"></div>
+	</header>
 
-  <ul id="movieList">
-    <li data-genre="Acción" data-duration="120" data-price="90">John wick<button class="buyButton">Comprar</button></li>
-    <li data-genre="Drama" data-duration="180" data-price="80">El Padrino<button class="buyButton">Comprar</button></li>
-    <li data-genre="Terror" data-duration="150" data-price="70">It<button class="buyButton">Comprar</button></li>
-    <li data-genre="Comedia" data-duration="110" data-price="65">Grown Ups<button class="buyButton">Comprar</button></li>
-  </ul>
+	<div class="content">
+		<!-- Contenido del área central -->
+		<div class="contenedor" id="contenedor"></div>
+	</div>
 
-
-  <h2>Edad</h2>
-
-  <label for="input-edad">Ingrese su edad:</label>
-  <input type="text" id="input-edad">
-  <button onclick="verificarEdad()">Verificar</button>
-  <p id="mensaje-edad"></p>
-
-  <script src="main.js"></script>
+	<div class="paginacion">
+		<button id="btnAnterior">Anterior</button>
+		<button id="btnSiguiente">Siguiente</button>"
+	</div>
+	<script src="./js/app.js"></script>
+	<script src="./js/carrito.js"></script>
 </body>
+
 </html>
